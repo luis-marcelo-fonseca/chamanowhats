@@ -1,0 +1,108 @@
+object HeaderFooterForm: THeaderFooterForm
+  Left = 0
+  Top = 0
+  Caption = 'Chama no Whats'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Header: TToolBar
+    Size.Width = 384.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object HeaderLabel: TLabel
+      Align = Contents
+      Size.Width = 384.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Chama no Whats'
+    end
+  end
+  object Footer: TToolBar
+    Align = Bottom
+    Position.Y = 519.000000000000000000
+    Size.Width = 384.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 1
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Horizontal
+    TabOrder = 3
+    Position.X = 15.000000000000000000
+    Position.Y = 136.000000000000000000
+    Margins.Left = 15.000000000000000000
+    Margins.Right = 15.000000000000000000
+    Size.Width = 354.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    Caret.Color = claSeagreen
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    Caret.Color = claSpringgreen
+    DataDetectorTypes = []
+    Align = Horizontal
+    Margins.Left = 15.000000000000000000
+    Margins.Right = 15.000000000000000000
+    Padding.Left = 15.000000000000000000
+    Padding.Right = 15.000000000000000000
+    Position.X = 15.000000000000000000
+    Position.Y = 288.000000000000000000
+    Size.Width = 354.000000000000000000
+    Size.Height = 152.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 148.000000000000000000
+  end
+  object Label1: TLabel
+    Align = Horizontal
+    AutoSize = True
+    Margins.Left = 15.000000000000000000
+    Margins.Right = 15.000000000000000000
+    Position.X = 15.000000000000000000
+    Position.Y = 87.000000000000000000
+    Size.Width = 354.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'WhatsApp:'
+    TabOrder = 6
+  end
+  object Label2: TLabel
+    Align = Horizontal
+    AutoSize = True
+    Padding.Left = 15.000000000000000000
+    Padding.Right = 15.000000000000000000
+    Margins.Left = 15.000000000000000000
+    Margins.Right = 15.000000000000000000
+    Position.X = 15.000000000000000000
+    Position.Y = 239.000000000000000000
+    Size.Width = 354.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Mensagem:'
+    TabOrder = 5
+  end
+  object Button1: TButton
+    Align = Horizontal
+    Margins.Left = 15.000000000000000000
+    Margins.Right = 15.000000000000000000
+    Position.X = 15.000000000000000000
+    Position.Y = 480.000000000000000000
+    Size.Width = 354.000000000000000000
+    Size.Height = 35.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = 'Chamar'
+    OnClick = Button1Click
+  end
+end
